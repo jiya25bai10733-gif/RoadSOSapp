@@ -83,21 +83,21 @@ We took this mandate further by combining active reactive services with **AI-dri
 
 ```mermaid
 graph TD
-    A[Next.js PWA Client] -->|1. Live GPS coordinates| B(useDangerZones Hook)
-    B -->|2. Proximity check request| C{Active Route Check}
-    C -->|Next.js Router| D[/api/danger/check]
-    C -->|Python Backend| E[FastAPI: /api/danger/check]
+    A["Next.js PWA Client"] -->|1. Live GPS coordinates| B("useDangerZones Hook")
+    B -->|2. Proximity check request| C{"Active Route Check"}
+    C -->|Next.js Router| D["/api/danger/check"]
+    C -->|Python Backend| E["FastAPI: /api/danger/check"]
     
-    D & E -->|3. Haversine & Risk calculations| F[(High-Risk Hotspots DB)]
-    D & E -->|4. Log event details| G[(danger_logs.json)]
+    D & E -->|3. Haversine & Risk calculations| F[("High-Risk Hotspots DB")]
+    D & E -->|4. Log event details| G[("danger_logs.json")]
     D & E -->|5. Return danger flags & risk score| B
     
-    B -->|6. Trigger warnings if high risk| H[UI Floating Warning Cards]
-    B -->|7. Speak text alert| I[Web Speech Synthesis]
+    B -->|6. Trigger warnings if high risk| H["UI Floating Warning Cards"]
+    B -->|7. Speak text alert| I["Web Speech Synthesis"]
     
-    A -->|8. Audio input| J[useSmartSOSTriggers]
-    J -->|9. Voice trigger match| K[SOS Flow & Countdown]
-    K -->|10. Dispatch SMS/Contacts notify| L[/api/sos/notify-contact]
+    A -->|8. Audio input| J["useSmartSOSTriggers"]
+    J -->|9. Voice trigger match| K["SOS Flow & Countdown"]
+    K -->|10. Dispatch SMS/Contacts notify| L["/api/sos/notify-contact"]
 ```
 
 ---
