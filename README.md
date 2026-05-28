@@ -11,16 +11,17 @@ RoadSOS is a premium, comprehensive emergency-response ecosystem designed to sol
 ---
 
 ## 📖 Table of Contents
-1. [Inspiration & Problem Statement](#-inspiration--problem-statement)
-2. [Hackathon Track Alignment](#-hackathon-track-alignment)
-3. [Key Features & AI Capabilities](#-key-features--ai-capabilities)
-4. [System Architecture](#-system-architecture)
-5. [Tech Stack](#-tech-stack)
-6. [Getting Started & Installation](#-getting-started--installation)
+1. [💡 Inspiration & Problem Statement](#-inspiration--problem-statement)
+2. [🏆 Hackathon Track Alignment](#-hackathon-track-alignment)
+3. [✨ Key Features & AI Capabilities](#-key-features--ai-capabilities)
+4. [📐 System Architecture](#-system-architecture)
+5. [🛠️ Tech Stack](#-tech-stack)
+6. [🚀 Getting Started & Installation](#-getting-started--installation)
    - [Next.js Frontend Setup](#1-nextjs-frontend-setup)
    - [Python FastAPI Backend Setup](#2-python-fastapi-backend-setup)
-7. [AI Proximity & Prediction Model Details](#-ai-proximity--prediction-model-details)
-8. [Authors & Contribution](#-authors--contribution)
+7. [🧠 AI Proximity & Prediction Model Details](#-ai-proximity--prediction-model-details)
+8. [🏛️ Organized By](#%EF%B8%8F-organized-by)
+9. [⚠️ Safety Disclaimer](#%EF%B8%8F-safety-disclaimer)
 
 ---
 
@@ -103,7 +104,7 @@ graph TD
 
 ## 🛠️ Tech Stack
 
-*   **Frontend Core**: HTML5, Next.js 16 (App Router), React, TypeScript.
+*   **Frontend Core**: HTML5, Next.js 16 (App Router), React 19, TypeScript.
 *   **Styling & Motion**: Vanilla CSS modules, TailwindCSS, Shadcn/ui tokens, Framer Motion.
 *   **Audio Orchestration**: Web Speech Synthesis API (TTS), Web Speech Recognition API (STT).
 *   **Backend Core**: Python 3.10+, FastAPI, Uvicorn, Pydantic, JSON db persistence.
@@ -119,7 +120,7 @@ graph TD
 
 ### 1. Next.js Frontend Setup
 
-1. Clone or navigate to the project directory:
+1. Navigate to the project directory:
    ```bash
    cd RoadSOSapp
    ```
@@ -129,9 +130,9 @@ graph TD
    ```
 3. Set up environment variables inside `.env.local`:
    ```env
-   # Add emergency services and default profiles if needed
    NEXT_PUBLIC_DEFAULT_AMBULANCE=102
    NEXT_PUBLIC_DEFAULT_POLICE=100
+   FAST2SMS_API_KEY=YOUR_FAST2SMS_API_KEY_HERE
    ```
 4. Run the Next.js development server:
    ```bash
@@ -198,5 +199,5 @@ If the user's distance calculated via the **Haversine formula** drops below the 
 
 ---
 
-> [!IMPORTANT]
-> **Safety Disclaimer**: RoadSOS is developed for Hackathon evaluation. It is highly optimized to run as a Progressive Web App (PWA) on mobile devices to access onboard hardware triggers successfully.
+## ⚠️ Safety Disclaimer
+RoadSOS is developed for Hackathon evaluation. It is highly optimized to run as a Progressive Web App (PWA) on mobile devices to access onboard hardware triggers successfully.
