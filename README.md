@@ -6,7 +6,7 @@
 
 Developed for **The National Road Safety Hackathon 2026**, organized by the **Centre of Excellence for Road Safety (CoERS)** and **RBG Labs, IIT Madras**. 
 
-RoadSOS is a premium, comprehensive emergency-response ecosystem designed to solve the critical "Golden Hour" response time and dynamically prevent accidents through real-time predictive Artificial Intelligence.
+RoadSOS is a premium, comprehensive emergency-response ecosystem, which is designed to solve the critical "Golden Hour" response time and dynamically prevent accidents through real-time predictive Artificial Intelligence.
 
 ---
 
